@@ -21,10 +21,9 @@ public class UserServices {
         return userRepository.findAll();
     }
 
-    public Optional<UserEntry> findById(ObjectId id){
-        return userRepository.findById(id);
+    public UserEntry findByUsername(String username){
+        return userRepository.findByusername(username);
     }
-    public void deleteById(ObjectId id){
-        userRepository.deleteById(id);
-    }
+
+
 }
